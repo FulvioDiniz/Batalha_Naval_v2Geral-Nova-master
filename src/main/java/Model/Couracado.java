@@ -4,7 +4,6 @@ public class Couracado  extends Barco{
     static final int tamanho = 4;
     private int partes = 4;
     private boolean vertical = false;
-
     private int posicaoPartes[][] = new int[4][2];
 
     // posicao inicial
@@ -63,7 +62,17 @@ public class Couracado  extends Barco{
     }
 
     public void setPosicaoPartes() {
-        this.posicaoPartes = posicaoPartes;
+        if(!isVertical()){
+            this.posicaoPartes[0][0] = this.x;
+            this.posicaoPartes[0][1] = this.y;
+            this.posicaoPartes[1][0] = this.x;
+            this.posicaoPartes[1][1] = this.y+1;
+        }else{
+            this.posicaoPartes[0][0] = this.x;
+            this.posicaoPartes[0][1] = this.y;
+            this.posicaoPartes[1][0] = this.x+1;
+            this.posicaoPartes[1][1] = this.y;
+        }
     }
 
     

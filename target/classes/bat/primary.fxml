@@ -1,21 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bat.Controller.PrimaryController">
+<AnchorPane fx:id="Fundo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bat.Controller.TelaPrincipalController">
    <children>
-      <Label fx:id="tituloLabel" layoutX="150.0" layoutY="45.0" text="Batalha Naval">
+      <Button fx:id="NovoJogo" layoutX="209.0" layoutY="118.0" mnemonicParsing="false" onAction="#ButtonNovoJogo" text="Novo Jogo" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
          <font>
-            <Font name="Ubuntu" size="48.0" />
+            <Font name="ArtifaktElement-Light" size="30.0" />
          </font>
-      </Label>
-      <Button fx:id="JogarButton" layoutX="233.0" layoutY="165.0" mnemonicParsing="false" onAction="#jogarClicado" prefHeight="71.0" prefWidth="135.0" style="-fx-background-color: red;" text="Jogar">
+         <textFill>
+            <RadialGradient centerX="0.4116022099447514" centerY="0.495260663507109" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.05999999865889549" green="0.1763809472322464" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.006213450338691473" green="0.02837475575506687" blue="0.6710526347160339" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="Ranking" layoutX="209.0" layoutY="244.0" mnemonicParsing="false" onAction="#ButtonRanking" prefHeight="56.0" prefWidth="191.0" text="Ranking" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
          <font>
-            <Font size="30.0" />
+            <Font name="Calibri Light Italic" size="30.0" />
          </font>
+         <textFill>
+            <RadialGradient centerX="0.4116022099447514" centerY="0.495260663507109" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.3733333349227905" blue="0.05999999865889549" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="Sair" layoutX="209.0" layoutY="300.0" mnemonicParsing="false" onAction="#ButtonSair" prefHeight="56.0" prefWidth="191.0" text="Sair" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4116022099447514" centerY="0.495260663507109" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.3733333349227905" blue="0.05999999865889549" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.05999999865889549" blue="0.05999999865889549" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Text layoutX="158.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batalha Naval" textAlignment="CENTER" wrappingWidth="283.087890625">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.4558011049723757" centerY="0.509478672985782" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.20426829268292682">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4603658536585366">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6790391226059911">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button fx:id="Cadastrar" layoutX="209.0" layoutY="181.0" mnemonicParsing="false" onAction="#ButtonCadastrar" prefHeight="56.0" prefWidth="191.0" text="Cadastrar " textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="ArtifaktElement-Light" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4116022099447514" centerY="0.495260663507109" cycleMethod="REPEAT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7672380805015564" green="0.05999999865889549" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9682098627090454" green="1.0" blue="0.046296294778585434" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
       </Button>
    </children>
 </AnchorPane>

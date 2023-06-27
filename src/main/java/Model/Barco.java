@@ -11,6 +11,8 @@ public abstract class Barco {
         this.afundado = afundado;
     }
 
+    
+
     public abstract int getTamanho();
 
     public abstract String getNome();
